@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЛПУМГ</title>
+    <link rel="icon" href="../images/logo_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo"><a href="index.html"><img src="../images/logo_logo.png" alt="foto" class="logo-image"/>Дюртюлинское ЛПУМГ</a></div>
+                <nav class="nav">
+                    <a class="nav__link active" href="index.html">ДЛПУМГ</a>
+                    <a class="nav__link" href="vakanciya.html">Вакансии</a>
+                    <a class="nav__link" href="student.html">Помощь студентам</a>
+                    <a class="nav__link" href="about.html">Контактная информация</a>
+                </nav>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>                                                  
+    </header>
+
+    <div class="image-slider">
+        <img src="./images/foto1.png" alt="foto" class="active">
+        <img src="./images/foto2.png" alt="foto">
+        <img src="./images/foto3.png" alt="foto">
+    </div>
+
+    <section id="content" class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Об организации</h2>
+                <div class="section__text"><strong>Дюртюлинское линейное производственное управление магистральных газопроводов (ДЛПУМГ)</strong> — филиал ООО «Газпром трансгаз Уфа». 
+                                            Находится в селе Москово Дюртюлинского района Республики Башкортостан.<br><br>
+                                            <strong>Основное направление деятельности</strong> — транспортировка природного газа.<br><br>
+                                            <strong>Основные производственные объекты:</strong><br>
+                                            - 758,83 км магистральных газопроводов и газопроводов-отводов;<br>
+                                            - 3 компрессорные станции КС-5 «Москово», КС-18 «Москово», КС-18А «Москово»;<br>
+                                            - 26 газораспределительных станций;<br>
+                                            - 1 автомобильная газонаполнительная компрессорная станция (на территории промплощадки).<br><br>
+                                            <strong>Дата создания:</strong> 15 октября 1979 года.<br><br> 
+                                            <strong>В зону ответственности управления входят 12 районов Республики Башкортостан:</strong><br>
+                                            - Дюртюлинский;<br>
+                                            - Илишевский;<br>
+                                            - Чекмагушевский;<br>
+                                            - Кушнаренковский;<br>
+                                            - Краснокамский;<br>
+                                            - Калтасинский;<br>
+                                            - Янаульский;<br>
+                                            - Татышлинский;<br>
+                                            - Бураевский;<br>
+                                            - Балтачевский;<br>
+                                            - Бирский;<br>
+                                            - Мишкинский.
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                <a class="fotter_a" href="about.html">Контактная информация</a><br>
+                © 2025 Дюртюлинское ЛПУМГ. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const slides = document.querySelectorAll('.image-slider img');
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides[currentSlide].classList.add('active');
+        }, 2000);
+        });
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+      </script>
+</body>
+</html>

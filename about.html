@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактная информация</title>
+    <link rel="icon" href="../images/logo_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo"><a href="index.html"><img src="../images/logo_logo.png" alt="foto" class="logo-image"/>Дюртюлинское ЛПУМГ</a></div>
+                <nav class="nav">
+                    <a class="nav__link" href="index.html">ДЛПУМГ</a>
+                    <a class="nav__link" href="vakanciya.html">Вакансии</a>
+                    <a class="nav__link" href="student.html">Помощь студентам</a>
+                    <a class="nav__link active" href="about.html">Контактная информация</a>
+                </nav>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="page-intro" style="background-image: url('./images/foto6.png');">
+        <div class="container">
+            <div class="page-intro__inner">
+                <h1 class="page-intro__title">Свяжитесь с нами обязательно</h1>
+            </div>
+        </div>
+    </div>
+
+    <section id="content" class="section">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__title">Контактная информация</h3>
+                    <div class="section__text">
+                        <strong>Адрес:</strong> 452311, Республика Башкортотан, Дюртюлинский район, село Москово, ул. Алга, 2<br>
+                        <strong>Телефон:</strong> +7(347)237-56-80 доб. 45–205 (отдел кадров)<br>
+                        <strong>Электронная почта:</strong> dyur-grizvanova@ufa-tr.gazprom.ru
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <iframe class="iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abe47da9e3aa7ea168752e49426980d02ad2462006470fb3bc783b651e126b3b0&amp;source=constructor" width="900" height="400"></iframe>    
+  
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                <a class="fotter_a" href="about.html">Контактная информация</a><br>
+                © 2025 Дюртюлинское ЛПУМГ. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Гамбургер меню
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
